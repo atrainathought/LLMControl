@@ -302,7 +302,7 @@ def info_card(content: str):
 
 
 def setup_sidebar():
-    """Setup consistent sidebar with API key input."""
+    """Setup consistent sidebar with API key input and branding."""
     import streamlit as st
 
     with st.sidebar:
@@ -318,4 +318,36 @@ def setup_sidebar():
             st.success("API key set!")
 
         st.markdown("---")
+
+        # TrainaThought LLC branding with logo
+        import base64
+        from pathlib import Path
+
+        logo_path = Path(__file__).parent / "assets" / "logo.png"
+        if logo_path.exists():
+            with open(logo_path, "rb") as f:
+                logo_data = base64.b64encode(f.read()).decode()
+            st.markdown(f"""
+            <div style="text-align: center; padding: 1rem 0;">
+                <img src="data:image/png;base64,{logo_data}" style="width: 80px; height: auto; margin-bottom: 0.5rem;">
+                <div style="font-size: 1.1rem; font-weight: 700; background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    TrainaThought
+                </div>
+                <div style="font-size: 0.7rem; opacity: 0.6; letter-spacing: 0.1em;">
+                    LLC
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+        else:
+            st.markdown("""
+            <div style="text-align: center; padding: 1rem 0;">
+                <div style="font-size: 1.5rem; font-weight: 700; background: linear-gradient(90deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    TrainaThought
+                </div>
+                <div style="font-size: 0.75rem; opacity: 0.7; letter-spacing: 0.1em;">
+                    LLC
+                </div>
+            </div>
+            """, unsafe_allow_html=True)
+
         st.caption("LLMControl v1.0")
