@@ -1,0 +1,40 @@
+{
+  "module": "07_lora_finetuning",
+  "timestamp": "2026-01-08T18:05:11.046767",
+  "results": [
+    {
+      "experiment_name": "tone_quality",
+      "approach": "base_model",
+      "provider": "local",
+      "model": "TinyLlama-1.1B",
+      "accuracy": 0.8,
+      "correct_count": 4,
+      "total_count": 5,
+      "latency_ms": 0.0,
+      "latency_samples": [],
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cost_usd": 0.0,
+      "timestamp": "2026-01-08T18:05:11.046631",
+      "extra": {}
+    },
+    {
+      "experiment_name": "tone_quality",
+      "approach": "lora_finetuned",
+      "provider": "local",
+      "model": "TinyLlama-1.1B-LoRA",
+      "accuracy": 0.6,
+      "correct_count": 3,
+      "total_count": 5,
+      "latency_ms": 0.0,
+      "latency_samples": [],
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cost_usd": 0.0,
+      "timestamp": "2026-01-08T18:05:11.046663",
+      "extra": {}
+    }
+  ]
+}

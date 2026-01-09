@@ -1,0 +1,84 @@
+{
+  "module": "02_structured_outputs",
+  "timestamp": "2026-01-08T15:41:47.396768",
+  "results": [
+    {
+      "experiment_name": "structured_outputs",
+      "approach": "raw_text",
+      "provider": "anthropic",
+      "model": "claude-3-haiku-20240307",
+      "accuracy": 0.875,
+      "correct_count": 7,
+      "total_count": 8,
+      "latency_ms": 1690.7037959899753,
+      "latency_samples": [
+        1315.0925529189408,
+        1163.3648429997265,
+        1710.9957959037274,
+        1481.2378990463912,
+        1374.2940409574658,
+        1391.6154040489346,
+        1907.4437620583922,
+        3181.586069986224
+      ],
+      "input_tokens": 906,
+      "output_tokens": 1034,
+      "total_tokens": 1940,
+      "cost_usd": 0.001519,
+      "timestamp": "2026-01-08T15:41:01.981194",
+      "extra": {}
+    },
+    {
+      "experiment_name": "structured_outputs",
+      "approach": "json_mode",
+      "provider": "anthropic",
+      "model": "claude-3-haiku-20240307",
+      "accuracy": 0.875,
+      "correct_count": 7,
+      "total_count": 8,
+      "latency_ms": 1451.1363573546987,
+      "latency_samples": [
+        2026.504322886467,
+        1217.9097780026495,
+        1227.053149137646,
+        1146.2642659898847,
+        1438.2820930331945,
+        1956.902866018936,
+        1271.6245318297297,
+        1324.5498519390821
+      ],
+      "input_tokens": 1218,
+      "output_tokens": 842,
+      "total_tokens": 2060,
+      "cost_usd": 0.001357,
+      "timestamp": "2026-01-08T15:41:15.508622",
+      "extra": {}
+    },
+    {
+      "experiment_name": "structured_outputs",
+      "approach": "tool_use",
+      "provider": "anthropic",
+      "model": "claude-3-haiku-20240307",
+      "accuracy": 0.875,
+      "correct_count": 7,
+      "total_count": 8,
+      "latency_ms": 2534.4113356259186,
+      "latency_samples": [
+        1491.5084028616548,
+        2867.4342229496688,
+        1604.8679349478334,
+        4064.94653201662,
+        1444.2351581528783,
+        1342.9711190983653,
+        5709.827227052301,
+        1749.500087928027
+      ],
+      "input_tokens": 5458,
+      "output_tokens": 1287,
+      "total_tokens": 6745,
+      "cost_usd": 0.0029732499999999998,
+      "timestamp": "2026-01-08T15:41:27.119084",
+      "extra": {}
+    }
+  ]
+}

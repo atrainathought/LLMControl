@@ -1,0 +1,24 @@
+{
+  "name": "llm-orchestration-patterns",
+  "version": "1.0.0",
+  "description": "Multi-agent LLM orchestration patterns in TypeScript",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "demo:sequential": "npx tsx src/01_sequential_chain/demo.ts",
+    "demo:parallel": "npx tsx src/02_parallel_fanout/demo.ts",
+    "demo:router": "npx tsx src/03_router_dispatcher/demo.ts",
+    "demo:iterative": "npx tsx src/04_iterative_refinement/demo.ts",
+    "demo:all": "npm run demo:sequential && npm run demo:parallel && npm run demo:router && npm run demo:iterative"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.27.0",
+    "dotenv": "^16.3.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0"
+  }
+}

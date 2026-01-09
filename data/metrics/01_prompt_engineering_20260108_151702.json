@@ -1,0 +1,57 @@
+{
+  "module": "01_prompt_engineering",
+  "timestamp": "2026-01-08T15:17:02.613958",
+  "results": [
+    {
+      "experiment_name": "sentiment_classification",
+      "approach": "zero-shot",
+      "provider": "anthropic",
+      "model": "claude-3-haiku-20240307",
+      "accuracy": null,
+      "correct_count": 0,
+      "total_count": 0,
+      "latency_ms": 0.0,
+      "latency_samples": [],
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cost_usd": 0.0,
+      "timestamp": "2026-01-08T15:17:02.610217",
+      "extra": {}
+    },
+    {
+      "experiment_name": "sentiment_classification",
+      "approach": "few-shot",
+      "provider": "anthropic",
+      "model": "claude-3-haiku-20240307",
+      "accuracy": null,
+      "correct_count": 0,
+      "total_count": 0,
+      "latency_ms": 0.0,
+      "latency_samples": [],
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cost_usd": 0.0,
+      "timestamp": "2026-01-08T15:17:02.613423",
+      "extra": {}
+    },
+    {
+      "experiment_name": "sentiment_classification",
+      "approach": "chain-of-thought",
+      "provider": "anthropic",
+      "model": "claude-3-haiku-20240307",
+      "accuracy": null,
+      "correct_count": 0,
+      "total_count": 0,
+      "latency_ms": 0.0,
+      "latency_samples": [],
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cost_usd": 0.0,
+      "timestamp": "2026-01-08T15:17:02.613670",
+      "extra": {}
+    }
+  ]
+}

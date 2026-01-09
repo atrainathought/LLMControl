@@ -1,0 +1,75 @@
+{
+  "module": "02_structured_outputs",
+  "timestamp": "2026-01-08T15:40:35.149777",
+  "results": [
+    {
+      "experiment_name": "structured_outputs",
+      "approach": "raw_text",
+      "provider": "anthropic",
+      "model": "claude-3-haiku-20240307",
+      "accuracy": 1.0,
+      "correct_count": 5,
+      "total_count": 5,
+      "latency_ms": 1382.7550939749926,
+      "latency_samples": [
+        1339.68490594998,
+        1147.2323031630367,
+        1226.5794998966157,
+        1248.4020190313458,
+        1951.8767418339849
+      ],
+      "input_tokens": 542,
+      "output_tokens": 643,
+      "total_tokens": 1185,
+      "cost_usd": 0.00093925,
+      "timestamp": "2026-01-08T15:40:10.120791",
+      "extra": {}
+    },
+    {
+      "experiment_name": "structured_outputs",
+      "approach": "json_mode",
+      "provider": "anthropic",
+      "model": "claude-3-haiku-20240307",
+      "accuracy": 1.0,
+      "correct_count": 5,
+      "total_count": 5,
+      "latency_ms": 1669.229918392375,
+      "latency_samples": [
+        2855.9232261031866,
+        1035.7677689753473,
+        1784.757565939799,
+        1590.4442321043462,
+        1079.2567988391966
+      ],
+      "input_tokens": 737,
+      "output_tokens": 554,
+      "total_tokens": 1291,
+      "cost_usd": 0.0008767499999999999,
+      "timestamp": "2026-01-08T15:40:17.035975",
+      "extra": {}
+    },
+    {
+      "experiment_name": "structured_outputs",
+      "approach": "tool_use",
+      "provider": "anthropic",
+      "model": "claude-3-haiku-20240307",
+      "accuracy": 1.0,
+      "correct_count": 5,
+      "total_count": 5,
+      "latency_ms": 1953.1236863695085,
+      "latency_samples": [
+        2040.8805259503424,
+        2547.4576510023326,
+        1480.608922895044,
+        1490.2891491074115,
+        2206.382182892412
+      ],
+      "input_tokens": 3387,
+      "output_tokens": 825,
+      "total_tokens": 4212,
+      "cost_usd": 0.001878,
+      "timestamp": "2026-01-08T15:40:25.383044",
+      "extra": {}
+    }
+  ]
+}

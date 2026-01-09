@@ -1,0 +1,50 @@
+{
+  "module": "03_function_calling",
+  "timestamp": "2026-01-08T17:09:24.034019",
+  "results": [
+    {
+      "experiment_name": "function_calling",
+      "approach": "with_tools",
+      "provider": "anthropic",
+      "model": "claude-3-haiku-20240307",
+      "accuracy": 1.0,
+      "correct_count": 5,
+      "total_count": 5,
+      "latency_ms": 3010.4820128064603,
+      "latency_samples": [
+        1636.101288953796,
+        1901.7127067781985,
+        2869.048255030066,
+        3344.3728680722415,
+        5301.1749451979995
+      ],
+      "input_tokens": 11341,
+      "output_tokens": 912,
+      "total_tokens": 12253,
+      "cost_usd": 0.0,
+      "timestamp": "2026-01-08T17:09:05.576782",
+      "extra": {}
+    },
+    {
+      "experiment_name": "function_calling",
+      "approach": "without_tools",
+      "provider": "anthropic",
+      "model": "claude-3-haiku-20240307",
+      "accuracy": 0.0,
+      "correct_count": 0,
+      "total_count": 3,
+      "latency_ms": 1134.2884813590597,
+      "latency_samples": [
+        570.1402712147683,
+        1654.7791420016438,
+        1177.9460308607668
+      ],
+      "input_tokens": 232,
+      "output_tokens": 258,
+      "total_tokens": 490,
+      "cost_usd": 0.0,
+      "timestamp": "2026-01-08T17:09:20.630600",
+      "extra": {}
+    }
+  ]
+}
